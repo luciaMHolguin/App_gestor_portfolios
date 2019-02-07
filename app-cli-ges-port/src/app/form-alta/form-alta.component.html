@@ -1,0 +1,18 @@
+<h2>
+  <!-- estp es la template, la vista-->
+  {{titulo}}
+  <!--esto son variables-->
+</h2>
+{{etiqueta_nombre}}: <input type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" />
+<br />
+Descripcion: <input type="text" [placeholder]="placeholder_des" [(ngModel)]="desIntroducido" />
+
+Fichero: <input type="text" [placeholder]="placeholder_fich" [(ngModel)]="fichIntroducido" />
+
+<input type="button" value="Añadir" (click)="darDeAlta()" />
+<input type="button" value="limpiar" (click)="limpiar()" />
+
+<p>{{nombreIntroducido}}</p>
+
+<!--cuando llevamos variables de la modelo a la vista se usa la llamada con dobles llaves {{varibles}} del modelo a la vista-->
+<!--los corchetes [] los usamos queremos que un atributo tenga el valor de una varible del modelo ,de la vista al modelo-->
