@@ -1,7 +1,11 @@
 <h2>Lista portfolios</h2>
 <ul>
-  <li *ngFor="let portfolio of arrayPortfolios">
-    el Portfolio es de {{Portfolio.nombre}}
+  <li *ngFor="let unPortfolio of arrayPortfolios">
+    <!-- esto es una sintaxis de angular-->
+    el Portfolio es de {{unPortfolio.getNombre()}}
+    <input type="button" value="Eliminar" (click)="darDeBaja()" />
+    <!--hacer un dar de baja en el componente lista-->
+    <!--pasar la persona que queremos eleiminar-->
 
   </li>
 </ul>

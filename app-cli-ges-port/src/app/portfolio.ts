@@ -9,4 +9,7 @@ export class Portfolio {
       throw new Error("nombre bo puede estar vacio");
     }
   }
+  getNombre() {
+    return this.nombre;
+  }
 }

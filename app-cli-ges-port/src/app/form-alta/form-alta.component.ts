@@ -4,8 +4,8 @@ import { PortfoliosService } from "../portfolios.service"; //aquí importamos nu
   //lo que esta dentro del componente son los metadatos, la inf de como va a funcionar el componente //la info entre corchetes esta en JSON es un objeto de javaScript.
   selector: "app-form-alta", //<app-form-alta>ESta es la etqueta de nuestro componente form </app-form-alta>
   templateUrl: "./form-alta.component.html",
-  styleUrls: ["./form-alta.component.css"],
-  providers: [PortfoliosService] //esto llama a nuestro servicio cuando la app de angular se carga
+  styleUrls: ["./form-alta.component.css"]
+  //providers: [PortfoliosService] //esto llama a nuestro servicio cuando la app de angular se carga
 })
 //tenemos una classe con nuestro comp, que implementa la interfaz OnInIt (al inicio del componente hz esto) de la que podemos usar todos los metodos
 export class FormAltaComponent implements OnInit {

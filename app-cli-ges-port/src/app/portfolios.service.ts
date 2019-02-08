@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Portfolio } from "./portfolio";
+import { ListaComponent } from "./lista/lista.component";
 
 @Injectable() //implementa una funcionalidad que es la capacidad de ser injectable. y tambien implementa el sistema de eventos.
 export class PortfoliosService {
@@ -18,6 +19,11 @@ export class PortfoliosService {
     console.log("<<<ALTA PORTFOLIO: " + nombre + ">>>");
   }
   public baja(nombre: string) {
+    for (let i = 0; i < this.lista.length; i++) {
+      if (this.lista[i].getNombre() == nombre) {
+        this.lista.splice(i, 1);
+      }
+    }
     console.log("<<<BAJA PORFOLIO: " + nombre + ">>>");
   }
   public listar() {
